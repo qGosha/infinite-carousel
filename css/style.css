@@ -1,0 +1,113 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+html {height: 100%;}
+body {
+	height: 100%;
+	font-size: 14px;
+	line-height: 24px;
+	font-family: Raleway, sans-serif;
+	background-color: #fff;
+}
+ol, ul {list-style: none;}
+* {
+	margin: 0;
+	padding: 0;
+	outline: none;
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+a, a:hover {text-decoration: none;}
+
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+.clearfix:after {clear: both;}
+
+.left {float:left;}
+.right {float:right;}
+.text-right {text-align: right;}
+.text-left{text-align: left;}
+
+.container {
+	position: relative;
+	width: 80%;
+	max-width: 1024px;
+	margin: 40px  auto 0;
+    overflow: hidden;
+}
+.slider-frame {
+	transition:  1s all;
+	width: 9999px;
+	margin-left: -1024px;
+}
+.slide {
+float: left;
+max-height: 500px;	
+}
+.slide img {
+	max-width: 100%;
+}
+.columns {
+	position: absolute;
+	width: 15%;
+	height: 500px;	
+	top: 0;
+	background: rgba(0,0,0,0);
+	cursor: pointer;
+}
+.column-left {
+    left: 0;
+}
+.column-right {
+	right: 0;
+}
+.column-left:hover,.column-right:hover {
+	background: rgba(0,0,0,0.5);
+}
+.column-left:hover .arr,.column-right:hover .arr{
+ border-color: yellow;
+ opacity: 1;	
+}
+.columns .arr {
+	opacity: 0;
+    border-color: black;
+    border-style: solid;
+    border-width: 0 10px 10px 0;
+    display: inline-block;
+    padding: 10px;
+	position: absolute;
+	top: 40%;
+}
+.columns .left-arr {
+left: 40%;
+ transform: rotate(135deg);
+ -webkit-transform:rotate(135deg);
+}
+.columns .right-arr {
+left: 40%;
+ transform: rotate(-45deg);
+ -webkit-transform:rotate(-45deg);
+}
