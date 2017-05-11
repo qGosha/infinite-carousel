@@ -1,1 +1,1 @@
-# vanilla-carousel
+# infinite-carousel
