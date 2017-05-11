@@ -59,16 +59,26 @@ a, a:hover {text-decoration: none;}
     overflow: hidden;
 }
 .slider-frame {
-	transition:  1s all;
+	position: relative;
 	width: 9999px;
-	margin-left: -1024px;
 }
 .slide {
+max-width: 100%;
 float: left;
 max-height: 500px;	
 }
 .slide img {
+	display: block;
+	height: auto;
 	max-width: 100%;
+}
+.slide span {
+	display: block;
+    font-size: 2em;
+    color: #f4f4f4;
+    font-weight: bold;
+	position: absolute;
+	top: 0;
 }
 .columns {
 	position: absolute;
@@ -111,3 +121,5 @@ left: 40%;
  transform: rotate(-45deg);
  -webkit-transform:rotate(-45deg);
 }
+
+
